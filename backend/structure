@@ -1,0 +1,19 @@
+backend/
+  package.json
+  tsconfig.json           # if you pick TS; otherwise omit
+  .env                    # DB URL, JWT secret, etc. (never commit)
+  .env.example            # sample env keys without secrets
+  Dockerfile
+  docker-compose.yml      # optional for local dev (API + maybe local Mongo/Redis later)
+  nginx/                  # NGINX configs for reverse proxy, WSS, security headers (later)
+  src/
+    server.ts             # main entry: boot Express, HTTP server, Socket.IO
+    app.ts                # Express app setup (middleware, routes)
+    config/
+    modules/
+    sockets/
+    ot-engine/
+    middlewares/
+    utils/
+
+
