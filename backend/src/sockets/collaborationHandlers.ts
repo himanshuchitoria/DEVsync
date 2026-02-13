@@ -63,6 +63,7 @@ export const registerCollaborationHandlers = (
    * - Sends snapshot only to joining client
    * - Notifies others that a collaborator joined
    */
+  // Improved collaboration handling
   socket.on('collab:join-file', async (data: JoinFilePayload) => {
     try {
       if (!socket.user?.sub) {
@@ -280,3 +281,4 @@ export const registerCollaborationHandlers = (
     },
   );
 };
+
